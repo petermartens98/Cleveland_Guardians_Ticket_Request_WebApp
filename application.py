@@ -105,5 +105,4 @@ def all_requests(employee_email: str, emp_id: int) -> Response | str:
 
 
 if __name__ == "__main__":
-    # Run the Flask app in debug mode
     application.run()
