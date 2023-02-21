@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>All Ticket Requests</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='requests_table.css') }}">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.11.3/datatables.min.css">
+  </head>
+  <body>
+    <header>
+      <h1>All Ticket Requests</h1>
+      <center>
+      <form action="/" class="container">
+        <button class="home_button" type="submit">Home</button>
+      </form>
+      </center>
+    </header>
+    <main>
+      <table id="request-table" class="display">
+        <thead>
+          <tr>
+            <th>Request ID</th>
+            <th>Employee ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Department</th>
+            <th>Date Requested</th>
+            <th>Number of Tickets</th>
+            <th>Is Approved</th>
+            <th>Game Date</th>
+            <th>Entry Time</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for index, row in requests.iterrows() %}
+          <tr>
+            <td>{{ row['request_id'] }}</td>
+            <td>{{ row['employee_id'] }}</td>
+            <td>{{ row['name'] }}</td>
+            <td>{{ row['email'] }}</td>
+            <td>{{ row['department'] }}</td>
+            <td>{{ row['date_requested'] }}</td>
+            <td>{{ row['number_of_tickets'] }}</td>
+            <td>{{ row['isApproved'] }}</td>
+            <td>{{ row['game_date'] }}</td>
+            <td>{{ row['entry_time'] }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/v/dt/dt-1.11.3/datatables.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $('#request-table').DataTable({
+          "paging": true,
+          "lengthMenu": [[5, 10, 15, -1], [5, 10, 15, "All"]],
+          "pageLength": -1,
+          "searching": true,
+          "ordering": true,
+          "info": true,
+          "autoWidth": true,
+          "responsive": true,
+          "language": {
+            "search": "Search Requests:",
+            "lengthMenu": "Show _MENU_ records per page",
+            "info": "Showing _START_ to _END_ of _TOTAL_ records",
+            "paginate": {
+              "first": "First",
+              "last": "Last",
+              "next": "Next",
+              "previous": "Previous"
+            }
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

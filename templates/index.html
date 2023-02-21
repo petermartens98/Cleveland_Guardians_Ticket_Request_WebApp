@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Guardians Ticket Requests</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+  </head>
+
+  <body>
+    <center>
+      <h1>Guardians Ticket Requests</h1>
+      <form id="employee-form" class="employee_form" method="GET" action="">
+        <label for="employee_email"><b>Employee Email:</b></label>
+        <input type="email" id="employee_email" name="employee_email" required>
+        <br><br>
+        <label for="employee_id"><b>Employee ID:</b></label>
+        <input type="text" id="employee_id" name="employee_id" required>
+        <br><br>
+        <button type="submit" name="request_type" value="employee">Employee Requests</button>
+        <button type="submit" name="request_type" value="department">Department Requests</button>
+        <button type="submit" name="request_type" value="all_requests">All Ticket Requests (Admin Only)</button>
+        <br>
+      </form>
+      {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            {% for message in messages %}
+              <h4>{{ message }}</h4>
+            {% endfor %}
+        {% endif %}
+      {% endwith %}
+    </center>
+    <script>
+      const employeeForm = document.getElementById("employee-form");
+      const employeeEmail = document.getElementById("employee_email");
+      const employeeID = document.getElementById("employee_id");
+
+      employeeForm.addEventListener("submit", function(e) {
+        e.preventDefault();
+
+        // Check if employeeID is an integer
+        if (!Number.isInteger(Number(employeeID.value))) {
+          // Add an error message to the page if not int
+          const errorMessage = "Employee ID must be a number";
+          window.alert(errorMessage);
+          return;
+        }
+
+        let action = "/employee_request/" + employeeEmail.value + "/" + employeeID.value;
+        if (e.submitter.value === "department") {
+            action = "/department_request/" + employeeEmail.value + "/" + employeeID.value;
+        }
+        if (e.submitter.value === "all_requests") {
+            action = "/all_requests/" + employeeEmail.value + "/" + employeeID.value;
+        }
+        employeeForm.setAttribute("action", action);
+        employeeForm.submit();
+      });
+    </script>
+  </body>
+</html>

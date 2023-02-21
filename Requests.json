@@ -1,0 +1,263 @@
+[
+  {
+    "request_id": 1,
+    "employee_id": 1,
+    "number_of_tickets": 2,
+    "date_requested": "2022-04-01T12:00:00Z",
+    "game_date": "2022-04-15T19:10:00Z",
+    "entry_time": "2022-04-15T18:30:00Z",
+    "isApproved": "yes"
+  },
+  {
+    "request_id": 2,
+    "employee_id": 1,
+    "number_of_tickets": 2,
+    "date_requested": "2022-04-01T10:00:00Z",
+    "game_date": "2022-04-20T20:05:00Z",
+    "entry_time": "2022-04-20T19:45:00Z",
+    "isApproved": "yes"
+  },
+  {
+    "request_id": 3,
+    "employee_id": 2,
+    "number_of_tickets": 4,
+    "date_requested": "2022-04-01T10:00:00Z",
+    "game_date": "2022-04-22T20:05:00Z",
+    "entry_time": "2022-04-22T19:45:00Z",
+    "isApproved": "yes"
+  },
+  {
+    "request_id": 4,
+    "employee_id": 2,
+    "number_of_tickets": 4,
+    "date_requested": "2022-04-01T10:00:00Z",
+    "game_date": "2022-04-24T20:05:00Z",
+    "entry_time": "2022-04-24T19:45:00Z",
+    "isApproved": "yes"
+  },
+  {
+    "request_id": 5,
+    "employee_id": 3,
+    "number_of_tickets": 4,
+    "date_requested": "2022-04-01T10:00:00Z",
+    "game_date": "2022-04-28T20:05:00Z",
+    "entry_time": "2022-04-28T19:45:00Z",
+    "isApproved": "no"
+  },
+  {
+    "request_id": 6,
+    "employee_id": 4,
+    "number_of_tickets": 6,
+    "date_requested": "2022-05-01T12:00:00Z",
+    "game_date": "2022-06-15T19:10:00Z",
+    "entry_time": "",
+    "isApproved": "yes"
+  },
+  {
+    "request_id": 7,
+    "employee_id": 4,
+    "number_of_tickets": 6,
+    "date_requested": "2022-05-01T10:00:00Z",
+    "game_date": "2022-07-20T20:05:00Z",
+    "entry_time": "2022-07-20T19:45:00Z",
+    "isApproved": "yes"
+  },
+  {
+    "request_id": 8,
+    "employee_id": 4,
+    "number_of_tickets": 4,
+    "date_requested": "2022-05-04T10:00:00Z",
+    "game_date": "2022-08-22T20:05:00Z",
+    "entry_time": "2022-08-22T19:45:00Z",
+    "isApproved": "no"
+  },
+  {
+    "request_id": 9,
+    "employee_id": 5,
+    "number_of_tickets": 4,
+    "date_requested": "2022-07-10T10:00:00Z",
+    "game_date": "2022-07-24T20:05:00Z",
+    "entry_time": "2022-07-24T19:45:00Z",
+    "isApproved": "yes"
+  },
+  {
+    "request_id": 10,
+    "employee_id": 6,
+    "number_of_tickets": 2,
+    "date_requested": "2022-08-11T10:00:00Z",
+    "game_date": "2022-08-28T20:05:00Z",
+    "entry_time": "2022-08-28T19:45:00Z",
+    "isApproved": "yes"
+  },
+  {
+    "request_id": 11,
+    "employee_id": 7,
+    "number_of_tickets": 5,
+    "date_requested": "2022-04-22T12:00:00Z",
+    "game_date": "2022-07-04T19:10:00Z",
+    "entry_time": "2022-07-04T18:30:00Z",
+    "isApproved": "yes"
+  },
+  {
+    "request_id": 12,
+    "employee_id": 7,
+    "number_of_tickets": 5,
+    "date_requested": "2022-04-22T10:00:00Z",
+    "game_date": "2022-09-05T20:05:00Z",
+    "entry_time": "2022-09-05T19:55:00Z",
+    "isApproved": "yes"
+  },
+  {
+    "request_id": 13,
+    "employee_id": 8,
+    "number_of_tickets": 4,
+    "date_requested": "2022-05-18T10:00:00Z",
+    "game_date": "2022-05-30T20:05:00Z",
+    "entry_time": "2022-05-30T19:45:00Z",
+    "isApproved": "yes"
+  },
+  {
+    "request_id": 14,
+    "employee_id": 9,
+    "number_of_tickets": 4,
+    "date_requested": "2022-06-06T10:00:00Z",
+    "game_date": "2022-07-04T20:05:00Z",
+    "entry_time": "2022-07-04T19:35:00Z",
+    "isApproved": "yes"
+  },
+  {
+    "request_id": 15,
+    "employee_id": 10,
+    "number_of_tickets": 2,
+    "date_requested": "2022-08-18T10:00:00Z",
+    "game_date": "2022-09-11T20:05:00Z",
+    "entry_time": "2022-09-11T19:45:00Z",
+    "isApproved": "yes"
+  },
+  {
+    "request_id": 16,
+    "employee_id": 11,
+    "number_of_tickets": 7,
+    "date_requested": "2022-03-31T12:00:00Z",
+    "game_date": "2022-04-15T19:10:00Z",
+    "entry_time": "2022-04-15T18:36:00Z",
+    "isApproved": "yes"
+  },
+  {
+    "request_id": 17,
+    "employee_id": 11,
+    "number_of_tickets": 2,
+    "date_requested": "2022-03-31T10:00:00Z",
+    "game_date": "2022-04-07T20:05:00Z",
+    "entry_time": "",
+    "isApproved": "yes"
+  },
+  {
+    "request_id": 18,
+    "employee_id": 12,
+    "number_of_tickets": 5,
+    "date_requested": "2022-03-15T10:00:00Z",
+    "game_date": "2022-04-22T20:05:00Z",
+    "entry_time": "2022-04-22T19:49:00Z",
+    "isApproved": "yes"
+  },
+  {
+    "request_id": 19,
+    "employee_id": 13,
+    "number_of_tickets": 4,
+    "date_requested": "2022-06-11T10:00:00Z",
+    "game_date": "2022-06-24T20:05:00Z",
+    "entry_time": "2022-06-24T19:25:00Z",
+    "isApproved": "yes"
+  },
+  {
+    "request_id": 20,
+    "employee_id": 14,
+    "number_of_tickets": 3,
+    "date_requested": "2022-06-18T10:00:00Z",
+    "game_date": "2022-06-18T20:05:00Z",
+    "entry_time": "2022-06-18T19:42:00Z",
+    "isApproved": "yes"
+  },
+  {
+    "request_id": 21,
+    "employee_id": 15,
+    "number_of_tickets": 4,
+    "date_requested": "2022-05-31T12:00:00Z",
+    "game_date": "2022-05-31.0T19:10:00Z",
+    "entry_time": "2022-05-31T18:46:00Z",
+    "isApproved": "yes"
+  },
+  {
+    "request_id": 22,
+    "employee_id": 15,
+    "number_of_tickets": 2,
+    "date_requested": "2022-05-31T10:00:00Z",
+    "game_date": "2022-06-07T20:05:00Z",
+    "entry_time": "2022-06-07T19:15:00Z",
+    "isApproved": "yes"
+  },
+  {
+    "request_id": 23,
+    "employee_id": 15,
+    "number_of_tickets": 5,
+    "date_requested": "2022-05-31T10:00:00Z",
+    "game_date": "2022-07-22T20:05:00Z",
+    "entry_time": "2022-07-22T19:49:00Z",
+    "isApproved": "no"
+  },
+  {
+    "request_id": 24,
+    "employee_id": 16,
+    "number_of_tickets": 3,
+    "date_requested": "2022-06-21T10:00:00Z",
+    "game_date": "2022-06-24T20:05:00Z",
+    "entry_time": "2022-06-24T19:35:00Z",
+    "isApproved": "yes"
+  },
+  {
+    "request_id": 25,
+    "employee_id": 16,
+    "number_of_tickets": 6,
+    "date_requested": "2022-06-21T10:00:00Z",
+    "game_date": "2022-07-18T20:05:00Z",
+    "entry_time": "2022-07-18T19:42:00Z",
+    "isApproved": "yes"
+  },
+  {
+    "request_id": 26,
+    "employee_id": 17,
+    "number_of_tickets": 4,
+    "date_requested": "2022-07-31T10:00:00Z",
+    "game_date": "2022-07-07T20:05:00Z",
+    "entry_time": "2022-07-07T19:15:00Z",
+    "isApproved": "yes"
+  },
+  {
+    "request_id": 27,
+    "employee_id": 18,
+    "number_of_tickets": 5,
+    "date_requested": "2022-09-01T10:00:00Z",
+    "game_date": "2022-09-22T20:05:00Z",
+    "entry_time": "2022-09-22T19:49:00Z",
+    "isApproved": "yes"
+  },
+  {
+    "request_id": 28,
+    "employee_id": 19,
+    "number_of_tickets": 6,
+    "date_requested": "2022-09-21T10:00:00Z",
+    "game_date": "2022-09-24T20:05:00Z",
+    "entry_time": "2022-09-24T19:35:00Z",
+    "isApproved": "yes"
+  },
+  {
+    "request_id": 29,
+    "employee_id": 20,
+    "number_of_tickets": 3,
+    "date_requested": "2022-08-18T19:00:00Z",
+    "game_date": "2022-08-18T20:05:00Z",
+    "entry_time": "2022-08-18T19:42:00Z",
+    "isApproved": "yes"
+  }
+]

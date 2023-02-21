@@ -1,0 +1,121 @@
+/* Body Styles */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #00385D;
+}
+
+/* Heading Styles */
+h1 {
+  font-size: 2em;
+  margin-top: 20px;
+  text-align: center;
+  color: #E5E4E2;
+}
+
+h3 {
+  font-size: 1.5em;
+  margin-top: 20px;
+  text-align: center;
+  color: #FF0000;
+}
+
+h4 {
+  margin-top: 10px;
+  margin-bottom: 0;
+  color: #FF0000;
+}
+
+/* Employee Form Styles*/
+.employee_form {
+  width: 500px;
+  margin: auto;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+}
+
+label {
+  display: inline-block;
+  width: 150px;
+  text-align: right;
+  margin-right: 10px;
+}
+
+input[type="email"],
+input[type="text"] {
+  width: 60%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 4px;
+}
+
+/* Button Styles */
+button[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.home_button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 14px 30px;
+  margin: 8px 0;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+.home_button:hover {
+  background-color: #45a049;
+}
+
+/* Table Styles*/
+table {
+  border-collapse: collapse;
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  background-color: #fff;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+td:first-child {
+  font-weight: bold;
+}
+
+td:last-child {
+  font-weight: bold;
+  text-align: center;
+}
+
+td:nth-child(even) {
+  background-color: #f2f2f2;
+}
+

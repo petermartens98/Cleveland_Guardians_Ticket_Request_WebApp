@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Employee Ticket Requests</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+  </head>
+  <body>
+
+    <center>
+    <h1>Employee Ticket Requests</h1>
+      <form action ='/'><input class="home_button" type="submit" value="Home"></form>
+      <h3>Employee Information</h3>
+      <table>
+        <tr>
+          <td>Employee:</td>
+          <td>{{ employee['name'] }}</td>
+        </tr>
+        <tr>
+          <td>Employee ID:</td>
+          <td>{{ employee['employee_id'] }}</td>
+        </tr>
+        <tr>
+          <td>Employee Email:</td>
+          <td>{{ employee['email'] }}</td>
+        </tr>
+        <tr>
+          <td>Department:</td>
+          <td>{{ employee['department'] }}</td>
+        </tr>
+        <tr>
+          <td>Is Admin:</td>
+          <td>{{ employee['isAdmin'] }}</td>
+        </tr>
+      </table>
+    <br>
+      <h3>Ticket Request Information</h3>
+    {% for request in requests %}
+      <table>
+        <tr>
+          <td>Request ID:</td>
+          <td>{{ request['request_id'] }}</td>
+        </tr>
+        <tr>
+          <td>Number of Tickets:</td>
+          <td>{{ request['number_of_tickets'] }}</td>
+        </tr>
+        <tr>
+          <td>Date Requested:</td>
+          <td>{{ request['date_requested'] }}</td>
+        </tr>
+        <tr>
+          <td>Is Approved:</td>
+          <td>{{ request['isApproved'] }}</td>
+        </tr>
+        <tr>
+          <td>Date of Game:</td>
+          <td>{{ request['game_date'] }}</td>
+        </tr>
+        <tr>
+          <td>Time Entered Ballpark:</td>
+          <td>{{ request['entry_time'] }}</td>
+        </tr>
+      </table>
+    <br>
+    {% endfor %}
+    </center>
+  </body>
+</html>
